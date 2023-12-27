@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intellitax Questionnaire</title>
+  <!-- Add your CSS styles here if needed -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .question {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Intellitax Questionnaire</h1>
+
+  <div class="question">
+    <h2>1. Income and Employment:</h2>
+    <p>What is your total annual income, including salary, bonuses, and any additional sources of income?</p>
+    <input type="number" name="totalIncome" required>
+
+    <p>Are you a salaried employee, self-employed, or do you have income from investments?</p>
+    <select name="employmentType" required>
+      <option value="salaried">Salaried</option>
+      <option value="self-employed">Self-employed</option>
+      <option value="investments">Income from Investments</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <h2>2. Deductions and Credits:</h2>
+    <p>Do you have any eligible deductions, such as mortgage interest, student loan interest, or contributions to retirement accounts?</p>
+    <input type="text" name="deductions">
+
+    <p>Are you eligible for any tax credits, such as child tax credits or education credits?</p>
+    <input type="text" name="taxCredits">
+  </div>
+
+  <div class="question">
+    <h2>3. Investments and Capital Gains:</h2>
+    <p>Have you earned any income from investments, dividends, or capital gains this fiscal year?</p>
+    <input type="text" name="investmentIncome">
+
+    <p>Are you aware of the tax implications of your investment portfolio?</p>
+    <textarea name="taxImplications"></textarea>
+  </div>
+
+  <div class="question">
+    <h2>4. Expenses and Debt Indicators:</h2>
+    <p>What are your monthly living expenses, including rent or mortgage, utilities, and other recurring costs?</p>
+    <input type="number" name="monthlyExpenses" required>
+
+    <p>Do you have any outstanding loans or credit card debt? If yes, what is the approximate amount?</p>
+    <input type="number" name="debtAmount">
+  </div>
+
+  <div class="question">
+    <h2>5. Financial Goals and Risk Tolerance:</h2>
+    <p>What are your short-term and long-term financial goals?</p>
+    <textarea name="financialGoals" required></textarea>
+
+    <p>How would you describe your risk tolerance when it comes to financial investments?</p>
+    <select name="riskTolerance" required>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+  </div>
+
+  <div class="question">
+    <h2>6. Future Financial Planning:</h2>
+    <p>Are you planning any significant financial changes in the upcoming year, such as buying a home, starting a business, or pursuing higher education?</p>
+    <textarea name="futurePlans"></textarea>
+  </div>
+
+  <div class="question">
+    <h2>7. Tax Deduction Tips:</h2>
+    <p>Based on your profile, Intellitax may suggest personalized tax deduction strategies, such as maximizing contributions to tax-advantaged accounts or taking advantage of specific deductions based on your circumstances.</p>
+    <textarea name="deductionTips"></textarea>
+  </div>
+
+  <div class="question">
+    <h2>8. Debt Risk Assessment:</h2>
+    <p>Analyzing the user's debt-to-income ratio and credit card utilization to assess potential debt issues.</p>
+    <input type="text" name="debtAssessment">
+
+    <p>Asking about the user's emergency fund and financial safety nets.</p>
+    <input type="text" name="emergencyFund">
+  </div>
+
+  <div class="question">
+    <h2>9. Tax Liability Projection:</h2>
+    <p>Using the gathered information to project the user's total tax liability at the end of the fiscal year.</p>
+    <input type="number" name="taxLiabilityProjection" required>
+  </div>
+
+  <div class="question">
+    <h2>10. Actionable Insights:</h2>
+    <p>Providing actionable insights on how the user can optimize their finances to minimize tax liability and reduce the risk of debt.</p>
+    <textarea name="actionableInsights" required></textarea>
+  </div>
+
+  <!-- Add a submit button at the end -->
+  <button type="submit">Submit</button>
+
+</body>
+</html>
